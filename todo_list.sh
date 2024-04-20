@@ -40,7 +40,7 @@ function Add {
 	echo "0,$pri,\"$ti\"" >> tasks.csv	
 }
 case $1 in
-	add)
+	"add")
 	Add "$2" "$3" "$4" "$5"
 	exit 1
 	;; 
@@ -51,6 +51,14 @@ case $1 in
 	"list")
 	awk -F\, '{print NR" | "$1" | "$2" | "$3}' tasks.csv
 	exit 1
+	;;
+	"find")
+	awk -F\, '{print NR" | "$1" | "$2" | "$3}' tasks.csv | grep -i "$2"
+	exit 1
+	;;
+	"done")
+	sed ""$2s"/^0/1/" tasks.csv > temp.csv
+	mv ./temp.csv ./tasks.csv
 	;;
 	*)
 	echo "Command Not Supported!"
