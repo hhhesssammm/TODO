@@ -43,6 +43,56 @@ bash todo.sh add -t "First Task" -p H
    tasks.csv:
    0,L,"Fifth Task"
    
+   فاز دوم:
+
+در دومین قدم از پیاده‌سازی پروژه، ما قصد پیاده‌سازی دو دستور list و clear را داریم. همان‌طور که از اسم این دو دستور مشخص است، دستور list تمامی کار‌های موجود در فایل tasks.csv را به ما نشان خواهد داد و دستور clear نیز تمام کار‌ها را از فایل tasks.csv پاک خواهد کرد.
+
+پس سناریو زیر را باید برای نوشتن دستورات ذکر شده در نظر بگیرید:
+
+فرض کنید ابتدا با دستورات زیر، کار‌هایی به فایل اضافه می‌شود:
+
+Terminal:
+
+bash todo.sh add -t "First Task" -p H
+bash todo.sh add -t "Second Task" -p M
+bash todo.sh add -t "Third Task" -p L
+bash todo.sh add -t "Fourth Task" -p M
+
+حال اگر دستور زیر وارد شود:
+
+Terminal:
+
+bash todo.sh clear
+
+باید محتوای فایل tasks.csv خالی شود.
+
+حال اگر مجدد دستورات زیر اجرا شود:
+
+Terminal:
+
+bash todo.sh add -t "First Task" -p H
+bash todo.sh add -t "Second Task" -p M
+bash todo.sh add -t "Third Task" -p L
+bash todo.sh add -t "Fourth Task" -p M
+
+سپس دستور زیر وارد شود:
+
+Terminal:
+
+bash todo.sh list
+
+باید خروجی زیر دریافت شود:
+
+1 | 0 | H | "First Task"
+2 | 0 | M | "Second Task"
+3 | 0 | L | "Third Task"
+4 | 0 | M | "Fourth Task"
+
+همان‌طور که در خروجی بالا مشخص است، نکته‌ای که در نمایش لیست وجود دارد این است که شما باید شماره خط هر کار در فایل tasks.csv را در خروجی نمایش دهید. از شماره خط در تمرین بعدی به‌عنوان آی‌دی هر کار استفاده خواهید کرد.
+
+در انتهای این تمرین شما باید پروژه‌تان را طوری تنظیم کنید تا اگر دستوری غیر از دستوراتی که پیاده‌سازی می‌کنید وارد شد، متن Command Not Supported! چاپ (echo) شود
+
+
 
 
 
