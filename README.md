@@ -67,10 +67,10 @@ bash todo.sh add -t "First Task" -p H
 
 Terminal:
 
--bash todo.sh add -t "First Task" -p H
--bash todo.sh add -t "Second Task" -p M
--bash todo.sh add -t "Third Task" -p L
--bash todo.sh add -t "Fourth Task" -p M
+-Bash todo.sh add -t "First Task" -p H
+-Bash todo.sh add -t "Second Task" -p M
+-Bash todo.sh add -t "Third Task" -p L
+-Bash todo.sh add -t "Fourth Task" -p M
 
 حال اگر دستور زیر وارد شود:
 
