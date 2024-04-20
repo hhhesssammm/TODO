@@ -1,24 +1,22 @@
 #! /bin/bash
-#$1 is command
-if [ $1="add" ]
-then
-	ti=""
-	pi=""
-	case $2 in
+function Add {
+	tit=""
+	pri=""
+	case $1 in
 	-t | --title ) 
-		ti=$3
+		ti=$2
  	;;	
 	-p | --priority)
-		pri=$3
+		pri=$2
 	;;
 	esac
 	
-	case $4 in
+	case $3 in
 	-t | --title ) 
-		ti=$5
+		ti=$4
 	;;	
 	-p | --priority)
-		pri=$5
+		pri=$4
 	;;
 	esac
 	
@@ -38,9 +36,23 @@ then
 		echo "Option -p|--priority Only Accept L|M|H"
 		exit 1
 	fi
-fi
-#make tasks.csv
-#cat << EOF >> tasks.csv
-#0,$priority,$title
-#EOF
-echo "0,$pri,\"$ti\"" >> tasks.csv
+	
+	echo "0,$pri,\"$ti\"" >> tasks.csv	
+}
+case $1 in
+	add)
+	Add "$2" "$3" "$4" "$5"
+	exit 1
+	;; 
+	"clear")
+	truncate -s 0 tasks.csv
+	exit 1
+	;;
+	"list")
+	awk -F\, '{print NR" | "$1" | "$2" | "$3}' tasks.csv
+	exit 1
+	;;
+	*)
+	echo "Command Not Supported!"
+	exit 1
+esac
